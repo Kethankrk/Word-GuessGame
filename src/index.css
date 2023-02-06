@@ -11,3 +11,132 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.gameRoot{
+  background-image: url(./components/images/black.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: #221F1F; */
+  height: 100vh;
+}
+
+.heading{
+  text-align: center;
+  padding-top: 58px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.display{
+  width: 826px;
+  height: 127px;
+  /* background-color: #727272; */
+  background-image: url(./components/images/tv-frame.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-inline: auto;
+  margin-top: 49px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnC{
+  margin-inline: auto;
+  width: fit-content;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(13, 59px);
+  justify-content: center;
+  gap: 10px;
+}
+
+.inputBtn{
+  padding: 15px;
+  border-radius: 5px;
+  /* background-color: rgb(74, 156, 74); */
+  background-image: url(./components/images/btn.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(74, 156, 74);
+  font-weight: 700;
+  font-size: 22px;
+  color: rgb(235, 231, 231);
+  width: 59px;
+}
+
+
+.letter{
+  border-bottom: 2px solid white;
+  font-size: 24px;
+  color: rgb(181, 247, 184);
+  font-weight: 700;
+  margin: 10px;
+  width: 30px;
+  text-align: center;
+  height: 35px;
+}
+.hint{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(32, 194, 32);
+}
+.chance{
+  text-align: center;
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(207, 207, 207);
+}
+.forResetBtn{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.resetBtn{
+  padding: 15px 25px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  background-color: rgb(255, 45, 45);
+  color: white;
+}
+.resetBtn:hover{
+  background-color:rgb(250, 23, 23);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:700px){
+  .display{
+    width: 400px;
+    height: 90px;
+  }
+  .heading{
+    font-size: 38px;
+  }
+  .btnC{
+    grid-template-columns: repeat(5, 60px);
+  }
+  .inputBtn{
+    width: 58px;
+  }
+}
